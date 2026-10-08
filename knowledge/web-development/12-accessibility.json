@@ -1,0 +1,41 @@
+{
+  "id": "accessibility",
+  "order": 12,
+  "title": "Accessibility",
+  "group": "Design & accessibility",
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "keyboard",
+    "alt",
+    "label",
+    "contrast",
+    "wcag",
+    "focus",
+    "screen reader"
+  ],
+  "goal": "Make a small page work with keyboard and assistive technology.",
+  "explanation": [
+    "Semantic HTML provides many useful behaviours by default. Use a button for an action and a link for navigation. Every form control needs an accessible name.",
+    "Try the whole page with Tab, Shift+Tab, Enter and Space as appropriate. Focus must remain visible and in a sensible order. An image needs alternative text based on its purpose; decorative images can have empty alt text.",
+    "WCAG AA contrast for ordinary text is at least 4.5:1, with 3:1 for large text under the standard definition. Automated checks catch only some issues; include manual keyboard and screen-reader testing."
+  ],
+  "code": "<label for=\"name\">Your name</label>\n<input id=\"name\" name=\"name\" autocomplete=\"name\">\n<button type=\"button\">Save draft</button>\n<img src=\"divider.svg\" alt=\"\">",
+  "language": "html",
+  "exercise": "Test your contact form without a mouse. Record and fix one unclear label or focus problem.",
+  "hint": "Do not remove outlines without providing a clearly visible replacement.",
+  "quiz": {
+    "question": "Which control is the best starting point for a keyboard-accessible action?",
+    "options": [
+      "A div with click handling",
+      "A native button",
+      "An image with no text"
+    ],
+    "correct": 1,
+    "explanation": "A native button already supports focus and standard keyboard activation."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+  }
+}

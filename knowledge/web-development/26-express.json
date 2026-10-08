@@ -1,0 +1,39 @@
+{
+  "id": "express",
+  "order": 26,
+  "title": "Express",
+  "group": "Tools & backend",
+  "keywords": [
+    "express",
+    "middleware",
+    "routes",
+    "node",
+    "server",
+    "request",
+    "response"
+  ],
+  "goal": "Understand a minimal route and the role of middleware.",
+  "explanation": [
+    "Express is a Node.js web framework. Routes handle combinations of HTTP method and path; middleware can parse input, authenticate a request or produce a response.",
+    "For a practice project, install Express and add a GET route. Do not use a demonstration server as a production security template.",
+    "Bound request sizes, validate input and handle errors consistently. Middleware order matters: a route cannot use parsed JSON until the parser has run."
+  ],
+  "code": "import express from \"express\";\nconst app = express();\napp.use(express.json({ limit: \"16kb\" }));\napp.get(\"/api/health\", (req, res) => {\n  res.json({ ok: true });\n});\napp.listen(3001, \"127.0.0.1\");",
+  "language": "javascript",
+  "exercise": "In a separate Node practice project with Express installed, add a JSON health route and test it.",
+  "hint": "Use GET /api/health. Backend examples require a Node runtime, not the browser preview.",
+  "quiz": {
+    "question": "What must run before a route reads parsed JSON from req.body?",
+    "options": [
+      "The JSON-parsing middleware",
+      "A CSS selector",
+      "A Git commit"
+    ],
+    "correct": 0,
+    "explanation": "Middleware runs in order, so parsing must precede code that consumes parsed input."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://expressjs.com/en/starter/hello-world.html"
+  }
+}

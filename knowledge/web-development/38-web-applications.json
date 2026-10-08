@@ -1,0 +1,41 @@
+{
+  "id": "web-applications",
+  "order": 38,
+  "title": "Project: a web application",
+  "group": "Shipping & projects",
+  "keywords": [
+    "app",
+    "application",
+    "crud",
+    "state",
+    "tasks",
+    "notes",
+    "loading",
+    "error",
+    "empty"
+  ],
+  "goal": "Build a small application around one complete user task.",
+  "explanation": [
+    "A task tracker can teach create, read, update and delete operations. Start with local in-memory state before adding persistence or a backend.",
+    "Design empty, loading, success and failure states. Preserve useful input when an operation fails. Treat browser storage as local convenience, not secure server storage.",
+    "If you add accounts, authorisation belongs on the server for each record. Do not treat a user id from a browser request as proof of identity."
+  ],
+  "code": "Task record\n{ \"id\": \"task-1\", \"title\": \"Build contact page\", \"done\": false }\n\nFlows: add → display → mark complete → delete",
+  "language": "text",
+  "exercise": "Build a task list with add, complete and delete. Write down how a failed save should behave.",
+  "hint": "Keep one complete flow working before adding accounts or multiple screens.",
+  "quiz": {
+    "question": "What should happen to useful form input after a failed save?",
+    "options": [
+      "Always discard it",
+      "Preserve it so the user can retry",
+      "Replace it with random data"
+    ],
+    "correct": 1,
+    "explanation": "Preserving input helps the person recover without repeating their work."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting"
+  }
+}

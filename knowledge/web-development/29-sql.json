@@ -1,0 +1,40 @@
+{
+  "id": "sql",
+  "order": 29,
+  "title": "SQL",
+  "group": "Tools & backend",
+  "keywords": [
+    "sql",
+    "select",
+    "where",
+    "join",
+    "group by",
+    "query",
+    "injection",
+    "parameters"
+  ],
+  "goal": "Read related records and keep values separate from SQL syntax.",
+  "explanation": [
+    "SELECT chooses columns and FROM chooses the source. WHERE filters rows. JOIN combines related tables using an explicit relationship.",
+    "Use parameterised queries for user-controlled values. Placeholder syntax depends on the database driver; do not copy one driver’s placeholders into another blindly.",
+    "An ORDER BY is needed when the result order matters. Limit the selected columns and row count to what the feature needs, and review query plans for slow queries."
+  ],
+  "code": "-- PostgreSQL-style parameterised query; bind $1 through your driver.\nSELECT id, name, price\nFROM products\nWHERE price < $1\nORDER BY price ASC;",
+  "language": "sql",
+  "exercise": "Write a query for products below a supplied price. Explain how the driver binds the price safely.",
+  "hint": "The supplied price is a bound value, not concatenated SQL text.",
+  "quiz": {
+    "question": "What is the safer way to include a user-supplied value?",
+    "options": [
+      "Concatenate it into the query",
+      "Bind it as a query parameter",
+      "Remove all spaces from it"
+    ],
+    "correct": 1,
+    "explanation": "Binding parameters keeps data separate from SQL syntax. Authorisation and validation are still required."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://www.postgresql.org/docs/current/sql-select.html"
+  }
+}

@@ -1,0 +1,1087 @@
+.excel-app {
+  --excel-green: #a9e3c1;
+  background: #080d10;
+  min-height: 100svh;
+  color: #e4ebe8;
+}
+.excel-header {
+  flex-wrap: wrap;
+  min-height: 84px;
+  border-bottom: 1px solid #ffffff10;
+  padding: 20px 36px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.excel-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+.excel-brand > span {
+  color: var(--excel-green);
+  margin-left: -16px;
+}
+.excel-brand small {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.excel-brand b {
+  font-weight: 400;
+  color: #8a9894;
+  margin-left: 12px;
+  letter-spacing: 0;
+}
+.excel-local {
+  margin-left: auto;
+  font-size: 11px;
+  color: #a3b6ac;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.excel-local i,
+.online-dot,
+.offline-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a9e3c1;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.offline-dot {
+  background: #bca67a;
+}
+.excel-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aebcb6;
+  font-size: 12px;
+}
+.excel-layout {
+  padding: 0;
+  align-items: stretch;
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr) 320px;
+}
+.excel-sidebar {
+  border-right: 1px solid #ffffff10;
+  padding: 36px 20px;
+}
+.excel-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  color: #88ad9d;
+}
+.excel-course-heading {
+  padding: 0 12px;
+}
+.excel-course-heading h1 {
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 17px 0 14px;
+  font-weight: 500;
+}
+.excel-course-heading p,
+.excel-face-panel p {
+  color: #879891;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.excel-progress {
+  margin: 26px 12px;
+}
+.excel-progress > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #91a39a;
+  margin-bottom: 9px;
+}
+.excel-progress strong {
+  color: #bddecc;
+  font-weight: 400;
+}
+.excel-progress progress {
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  border: 0;
+  border-radius: 2px;
+  background: #1c2a23;
+}
+.excel-progress progress::-webkit-progress-bar {
+  background: #1c2a23;
+}
+.excel-progress progress::-webkit-progress-value {
+  background: var(--excel-green);
+}
+.excel-progress progress::-moz-progress-bar {
+  background: var(--excel-green);
+}
+.excel-lesson-group {
+  margin: 22px 0;
+}
+.excel-lesson-group h2 {
+  padding: 0 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #728b7e;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.excel-lesson-group button {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  padding: 11px 10px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 11px;
+  color: #a0b0a8;
+  line-height: 1.4;
+}
+.excel-lesson-group button.current {
+  color: #d9f5e4;
+  background: #9be8b70b;
+  border-color: #9be8b723;
+}
+.excel-lesson-group button:hover {
+  background: #ffffff08;
+}
+.lesson-number {
+  font-size: 10px;
+  color: #657c70;
+  min-width: 19px;
+}
+.lesson-number.done {
+  color: #b5edcd;
+}
+.lesson-current-dot {
+  margin-left: auto;
+  width: 4px;
+  height: 4px;
+  background: #b5edcd;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.excel-save-note {
+  font-size: 10px;
+  color: #8a9d92;
+  margin: 34px 12px 10px;
+  line-height: 1.6;
+}
+.excel-text-button {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #9cada3;
+  padding: 6px 0;
+}
+.excel-sidebar > .excel-text-button {
+  margin-left: 12px;
+}
+.excel-reset {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.excel-reset button {
+  background: #1a2921;
+  border: 1px solid #40584b;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 8px 8px 0 0;
+}
+.excel-workspace {
+  min-width: 0;
+}
+.excel-workspace-toolbar {
+  min-height: 63px;
+  padding: 16px 30px;
+  border-bottom: 1px solid #ffffff10;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.excel-workspace-toolbar > span {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #8ca59a;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.excel-workspace-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  color: #899d92;
+}
+.excel-workspace-toolbar select {
+  background: #111b16;
+  border: 1px solid #2d3b33;
+  color: #bfd3c7;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.excel-lesson {
+  padding: 34px 38px 30px;
+  max-width: 850px;
+  margin: auto;
+}
+.excel-lesson-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #86b49b;
+  font-size: 9px;
+  letter-spacing: 1.2px;
+}
+.excel-lesson-meta b {
+  font-weight: 400;
+  color: #506c5d;
+  margin-left: 5px;
+}
+.excel-lesson-meta > span:last-child {
+  color: #88988f;
+  font-size: 8px;
+}
+.excel-lesson > h2 {
+  font-size: clamp(26px, 2.35vw, 38px);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -1.3px;
+  margin: 19px 0 12px;
+}
+.excel-goal {
+  color: #9caca3;
+  line-height: 1.7;
+  font-size: 13px;
+}
+.excel-lesson-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 21px 0 12px;
+}
+.excel-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #ffffff1b;
+  background: #ffffff03;
+  padding: 9px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: #b9c9c0;
+}
+.excel-steps {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0;
+}
+.excel-steps li {
+  display: flex;
+  gap: 13px;
+  margin: 16px 0;
+  align-items: flex-start;
+}
+.excel-steps li > span {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #668d733a;
+  border-radius: 50%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ac4aa;
+  flex-shrink: 0;
+}
+.excel-steps p {
+  margin: 1px 0 0;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #bac9c1;
+}
+.excel-example {
+  border-left: 2px solid #769f87;
+  background: #a8e6bf06;
+  padding: 15px 18px;
+  margin: 24px 0;
+}
+.excel-example p {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 9px 0 0;
+  color: #c3dfce;
+  overflow-wrap: anywhere;
+}
+.excel-sheet {
+  border: 1px solid #ffffff14;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 24px 0;
+}
+.excel-sheet summary {
+  list-style: none;
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 11px;
+  color: #b9cdc1;
+  background: #ffffff03;
+}
+.excel-sheet summary::-webkit-details-marker {
+  display: none;
+}
+.excel-sheet summary span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #789785;
+  font-size: 10px;
+}
+.excel-table-scroll {
+  overflow-x: auto;
+}
+.excel-sheet table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.excel-sheet td,
+.excel-sheet th {
+  border: 1px solid #ffffff0d;
+  padding: 9px 10px;
+  text-align: left;
+  font-weight: 400;
+}
+.excel-sheet th {
+  background: #141e18;
+  color: #759783;
+  text-align: center;
+  font-size: 10px;
+}
+.excel-sheet .sheet-heading {
+  background: #203d2e;
+  color: #c8e3d3;
+  font-size: 10px;
+}
+.excel-sheet .numeric {
+  text-align: right;
+  color: #c5d6cc;
+  font-variant-numeric: tabular-nums;
+}
+.excel-sheet > p {
+  padding: 10px 13px;
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #7f988a;
+}
+.excel-exercise {
+  background: #101b15;
+  border: 1px solid #8edcab25;
+  border-radius: 8px;
+  padding: 22px;
+  margin-top: 29px;
+}
+.excel-exercise-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.excel-completed {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 10px;
+  color: #b2e5c3;
+}
+.excel-exercise h3 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 12px 0 20px;
+}
+.excel-answer-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 10px;
+  color: #95afa0;
+}
+.excel-answer-label input,
+.excel-chat textarea {
+  width: 100%;
+  border: 1px solid #95bda038;
+  border-radius: 5px;
+  background: #080f0b;
+  color: #dcf0e3;
+  padding: 12px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 13px;
+}
+.excel-answer-label input::placeholder,
+.excel-chat textarea::placeholder {
+  color: #7a9586;
+}
+.excel-check-actions {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.excel-primary {
+  border: 0;
+  border-radius: 5px;
+  background: #b7e6c8;
+  color: #10291a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 11px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.excel-primary:hover:not(:disabled) {
+  background: #d0f5dd;
+  color: #10291a;
+}
+.excel-exercise fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.excel-choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px;
+  border: 1px solid #668e7440;
+  border-radius: 5px;
+  margin: 8px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.excel-choice input {
+  accent-color: #b7e6c8;
+}
+.excel-hint,
+.excel-solution,
+.excel-feedback {
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 14px;
+  background: #ffffff05;
+  color: #c1d4c8;
+}
+.excel-feedback.correct {
+  border: 1px solid #9ee5b845;
+  background: #a2e5b609;
+}
+.excel-feedback.retry {
+  border: 1px solid #e5c59e45;
+}
+.excel-feedback p,
+.excel-solution p {
+  margin: 5px 0 0;
+}
+.excel-solution code {
+  overflow-wrap: anywhere;
+  color: #b7e6c8;
+}
+.excel-solution small {
+  display: block;
+  margin-top: 8px;
+  color: #91a89a;
+}
+.excel-reveal {
+  margin-top: 14px;
+}
+.excel-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  margin-top: 26px;
+}
+.excel-navigation button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  border: 0;
+  background: none;
+  font-size: 11px;
+  padding: 8px 0;
+  color: #b6cec0;
+}
+.excel-navigation > span {
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: right;
+  color: #b7e6c8;
+}
+.excel-jeff {
+  border-left: 1px solid #ffffff10;
+  padding: 22px;
+  min-width: 0;
+}
+.excel-face-panel {
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 43%, #47715a15, transparent 65%);
+}
+.excel-face-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #809a8c;
+  letter-spacing: 1.3px;
+  align-items: center;
+}
+.excel-face-caption label {
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 9px;
+}
+.excel-face-caption input {
+  accent-color: #b7e6c8;
+  width: 10px;
+  height: 10px;
+}
+.excel-face-panel .jeff-face {
+  width: 100%;
+  height: 270px;
+  margin: 0 auto;
+}
+.excel-face-panel .jeff-face canvas {
+  width: 290px;
+  height: 290px;
+  max-width: 100%;
+}
+.excel-face-panel h2,
+.excel-face-copy h2 {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  margin: 0 0 10px;
+}
+.excel-face-panel p,
+.excel-face-copy p {
+  margin: 0 0 22px;
+}
+.excel-face-copy {
+  text-align: center;
+}
+.excel-connection {
+  padding: 11px 0;
+  border-top: 1px solid #ffffff12;
+  border-bottom: 1px solid #ffffff12;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: #a6bdae;
+}
+.excel-connection button {
+  margin-left: auto;
+}
+.excel-setup {
+  font-size: 11px;
+  color: #93b29f;
+  line-height: 1.8;
+  padding-top: 12px;
+}
+.excel-setup summary {
+  cursor: pointer;
+}
+.excel-setup code {
+  display: block;
+  overflow-wrap: anywhere;
+  background: #ffffff06;
+  padding: 8px;
+}
+.excel-chat {
+  padding-top: 26px;
+}
+.excel-chat h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 11px 0 6px;
+}
+.excel-chat-intro {
+  font-size: 11px;
+  color: #8ca497;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.excel-chat textarea {
+  resize: vertical;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.7;
+  min-height: 90px;
+}
+.excel-chat form > .excel-primary {
+  width: 100%;
+  margin-top: 10px;
+}
+.excel-note {
+  font-size: 10px;
+  color: #91a89b;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.excel-error {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #edb79f;
+  overflow-wrap: anywhere;
+  margin: 12px 0;
+}
+.excel-chat-messages {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+}
+.excel-chat-message {
+  border: 1px solid #ffffff13;
+  background: #ffffff03;
+  border-radius: 5px;
+  padding: 11px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.excel-chat-message > strong {
+  font-size: 10px;
+  color: #a8cfb7;
+}
+.excel-chat-message p {
+  margin: 7px 0;
+}
+.excel-chat-message pre {
+  overflow-x: auto;
+  padding: 7px;
+  background: #050b07;
+}
+.excel-chat-message ul,
+.excel-chat-message ol {
+  padding-left: 18px;
+}
+.excel-chat-message a {
+  text-decoration: underline;
+}
+.excel-chat-message.user {
+  border-color: #8ebda82a;
+}
+.excel-wait {
+  font-size: 10px;
+  color: #a1b4a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+.excel-footer {
+  max-width: 1600px;
+  margin: auto;
+  border-top: 1px solid #ffffff10;
+  padding: 22px 36px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 9px;
+  letter-spacing: 0.6px;
+  color: #82998a;
+}
+.excel-entry {
+  font-size: 12px;
+  padding: 8px 12px;
+  border: 1px solid #8dbca845;
+  border-radius: 5px;
+  color: #b7e6c8;
+  white-space: nowrap;
+}
+@media (min-width: 1500px) {
+  .excel-layout {
+    grid-template-columns: 260px minmax(0, 1fr) 350px;
+  }
+  .excel-lesson {
+    padding: 40px 55px;
+  }
+}
+@media (max-width: 1150px) {
+  .excel-layout {
+    grid-template-columns: 210px minmax(0, 1fr);
+  }
+  .excel-jeff {
+    grid-column: 2;
+    border-top: 1px solid #ffffff12;
+    border-left: 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .excel-sidebar {
+    grid-row: 1 / 3;
+  }
+  .excel-jeff .excel-face-panel {
+    grid-row: 1 / 4;
+  }
+  .excel-jeff .excel-chat {
+    grid-column: 2;
+    padding-top: 0;
+  }
+  .excel-workspace-toolbar {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 700px) {
+  .excel-header {
+    padding: 15px 20px;
+    gap: 12px;
+    min-height: 70px;
+  }
+  .excel-brand {
+    gap: 10px;
+  }
+  .excel-brand b {
+    display: block;
+    margin: 4px 0 0;
+    font-size: 10px;
+  }
+  .excel-local {
+    font-size: 9px;
+  }
+  .excel-back {
+    display: none;
+  }
+  .excel-layout {
+    display: block;
+  }
+  .excel-sidebar {
+    padding: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff10;
+  }
+  .excel-course-heading {
+    padding: 0;
+  }
+  .excel-course-heading h1 {
+    font-size: 23px;
+    margin: 10px 0;
+  }
+  .excel-course-heading h1 br {
+    display: none;
+  }
+  .excel-course-heading p {
+    display: none;
+  }
+  .excel-progress {
+    margin: 16px 0;
+  }
+  .excel-sidebar nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 8px;
+  }
+  .excel-lesson-group {
+    flex: 0 0 215px;
+    margin: 0;
+  }
+  .excel-lesson-group h2 {
+    padding-left: 10px;
+  }
+  .excel-lesson-group button {
+    padding: 9px;
+  }
+  .excel-save-note {
+    margin: 10px 0 0;
+  }
+  .excel-sidebar > .excel-text-button {
+    margin-left: 0;
+  }
+  .excel-workspace-toolbar {
+    padding: 15px 20px;
+  }
+  .excel-lesson {
+    padding: 28px 20px;
+  }
+  .excel-lesson > h2 {
+    font-size: 29px;
+  }
+  .excel-exercise {
+    padding: 17px;
+  }
+  .excel-jeff {
+    display: block;
+    padding: 25px 20px;
+  }
+  .excel-face-panel {
+    max-width: 340px;
+    margin: auto;
+  }
+  .excel-jeff .excel-chat {
+    padding-top: 25px;
+  }
+  .excel-face-panel .jeff-face {
+    height: 280px;
+  }
+  .excel-footer {
+    padding: 20px;
+    flex-wrap: wrap;
+    line-height: 1.6;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .excel-app *,
+  .excel-app *::before,
+  .excel-app *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+.excel-voice-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 0 0 16px;
+  font-size: 11px;
+  color: #b9cfc1;
+}
+.excel-voice-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.excel-voice-controls input {
+  accent-color: #b7e6c8;
+}
+.excel-microphone-featured {
+  margin: 0 0 22px;
+  padding: 16px;
+  border: 1px solid #8edcab25;
+  border-radius: 8px;
+  background: #a8e6bf07;
+  text-align: center;
+}
+.excel-microphone-featured > .excel-primary {
+  width: 100%;
+  min-height: 48px;
+  font-size: 15px;
+}
+.excel-microphone-featured > .excel-text-button {
+  margin: 8px auto 0;
+}
+.excel-microphone-featured p {
+  margin: 10px 0 0;
+}
+
+/* Keep the Excel course spacious and legible instead of dashboard-dense. */
+.excel-app {
+  font-size: 16px;
+}
+.excel-back,
+.excel-entry,
+.excel-secondary,
+.excel-primary,
+.excel-text-button,
+.excel-workspace-toolbar label,
+.excel-workspace-toolbar select {
+  font-size: 14px;
+}
+.excel-entry,
+.excel-secondary,
+.excel-primary {
+  min-height: 42px;
+}
+.excel-course-heading p,
+.excel-face-panel p,
+.excel-face-copy p,
+.excel-goal,
+.excel-steps p,
+.excel-exercise h3,
+.excel-choice,
+.excel-hint,
+.excel-solution,
+.excel-feedback,
+.excel-chat-message,
+.excel-chat textarea {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.excel-course-heading p,
+.excel-face-panel p,
+.excel-face-copy p,
+.excel-goal,
+.excel-steps p,
+.excel-exercise h3,
+.excel-chat-message {
+  color: #c4d1ca;
+}
+.excel-eyebrow,
+.excel-lesson-meta,
+.excel-progress > div,
+.excel-lesson-group h2,
+.excel-lesson-group button,
+.excel-save-note,
+.excel-note,
+.excel-connection,
+.excel-voice-controls,
+.excel-answer-label {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.excel-eyebrow,
+.excel-lesson-meta {
+  letter-spacing: 0.08em;
+}
+.excel-sidebar {
+  padding: 34px 24px;
+}
+.excel-lesson-group button {
+  min-height: 44px;
+  padding: 11px 10px;
+}
+.excel-progress progress {
+  height: 6px;
+  border-radius: 999px;
+}
+.excel-lesson {
+  max-width: 780px;
+  padding: 46px 48px;
+}
+.excel-lesson > h2 {
+  line-height: 1.2;
+  margin-top: 24px;
+}
+.excel-steps {
+  margin: 34px 0;
+}
+.excel-steps li {
+  gap: 16px;
+  margin: 22px 0;
+}
+.excel-steps li > span {
+  width: 28px;
+  height: 28px;
+  font-size: 13px;
+}
+.excel-exercise {
+  padding: 28px;
+  margin-top: 36px;
+}
+.excel-choice {
+  min-height: 50px;
+  padding: 14px;
+  margin: 11px 0;
+}
+.excel-choice input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+.excel-example p,
+.excel-answer-label input {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1150px) and (min-width: 701px) {
+  .excel-layout {
+    grid-template-columns: 270px minmax(0, 1fr);
+    max-width: 1180px;
+  }
+  .excel-sidebar {
+    grid-row: 1 / 3;
+  }
+  .excel-jeff {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 28px;
+    padding: 34px 48px;
+    border-top: 1px solid #ffffff12;
+    border-left: 0;
+  }
+  .excel-jeff-companion {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+  .excel-face-panel .jeff-face {
+    height: 210px;
+  }
+  .excel-jeff .excel-chat {
+    grid-column: 2;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1151px) {
+  .excel-jeff-companion {
+    position: sticky;
+    top: 16px;
+    z-index: 30;
+    padding: 10px;
+    margin: -10px -10px 12px;
+    border: 1px solid #ffffff18;
+    border-radius: 12px;
+    background: color-mix(in srgb, #080d10 94%, transparent);
+    box-shadow: 0 18px 38px #0008;
+    backdrop-filter: blur(12px);
+  }
+}
+
+@media (max-width: 700px) {
+  .excel-course-heading p {
+    display: block;
+  }
+  .excel-lesson {
+    padding: 32px 20px;
+  }
+  .excel-exercise {
+    padding: 20px;
+  }
+}

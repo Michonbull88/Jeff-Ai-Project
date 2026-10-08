@@ -1,0 +1,40 @@
+{
+  "id": "how-the-web-works",
+  "order": 1,
+  "title": "How the web works",
+  "group": "HTML & foundations",
+  "keywords": [
+    "browser",
+    "server",
+    "http",
+    "https",
+    "dns",
+    "request",
+    "response",
+    "url"
+  ],
+  "goal": "Follow a page request from your browser to a server.",
+  "explanation": [
+    "A browser requests resources from a server. A URL identifies a resource; DNS helps resolve a hostname to an IP address. HTTPS protects the connection with TLS.",
+    "The server sends a response with a status, headers and a body. HTML describes the page, CSS controls presentation, and JavaScript adds behaviour. They may arrive in separate responses.",
+    "Open browser developer tools and the Network tab, reload a page, and inspect the document request. A 404 means the requested resource was not found; it does not mean your computer is broken."
+  ],
+  "code": "GET /about HTTP/1.1\nHost: example.com\n\nHTTP/1.1 200 OK\nContent-Type: text/html",
+  "language": "http",
+  "exercise": "Inspect one document request. Record its method, status and Content-Type.",
+  "hint": "Look for the request with type document in the Network tab.",
+  "quiz": {
+    "question": "Which resource usually defines the structure of a web page?",
+    "options": [
+      "HTML",
+      "CSS",
+      "A DNS record"
+    ],
+    "correct": 0,
+    "explanation": "HTML describes the content and structure. CSS controls its presentation."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+  }
+}

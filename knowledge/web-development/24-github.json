@@ -1,0 +1,39 @@
+{
+  "id": "github",
+  "order": 24,
+  "title": "GitHub and collaboration",
+  "group": "Tools & backend",
+  "keywords": [
+    "github",
+    "pull request",
+    "review",
+    "remote",
+    "push",
+    "merge",
+    "issue"
+  ],
+  "goal": "Share a proposed change through a reviewable pull request.",
+  "explanation": [
+    "Git is the version-control tool; GitHub hosts repositories and collaboration tools. A remote connects a local repository to a hosted one.",
+    "Use a branch for a focused change. Push it and open a pull request that explains the problem, resulting behaviour and checks performed.",
+    "Review the diff and automated checks before merging. Keep secrets out of issues, logs and screenshots. Resolve review feedback in context rather than rewriting unrelated code."
+  ],
+  "code": "git switch -c add-contact-page\n# Edit, review and commit your files first.\ngit push -u origin add-contact-page",
+  "language": "sh",
+  "exercise": "Draft a pull-request description for a responsive navigation fix, including how you tested it.",
+  "hint": "State what users experienced before and after the change.",
+  "quiz": {
+    "question": "What is a pull request used for?",
+    "options": [
+      "Proposing and reviewing a change",
+      "Storing private passwords",
+      "Replacing local commits"
+    ],
+    "correct": 0,
+    "explanation": "A pull request creates a place to discuss and review a branch before integration."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests"
+  }
+}

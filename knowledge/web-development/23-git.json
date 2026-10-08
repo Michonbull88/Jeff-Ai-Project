@@ -1,0 +1,39 @@
+{
+  "id": "git",
+  "order": 23,
+  "title": "Git",
+  "group": "Tools & backend",
+  "keywords": [
+    "git",
+    "commit",
+    "branch",
+    "diff",
+    "status",
+    "version control",
+    "repository"
+  ],
+  "goal": "Record and inspect a small change safely.",
+  "explanation": [
+    "Git stores a history of commits. Your working tree contains edits, and the staging area selects what goes into the next commit.",
+    "Use git status and git diff before staging. After staging, inspect git diff --cached so the commit contains only the intended change.",
+    "Keep credentials, environment files and generated dependencies out of commits. A .gitignore rule does not remove a secret already tracked; exposed credentials need rotation."
+  ],
+  "code": "git status\ngit diff\ngit add index.html styles.css\ngit diff --cached\ngit commit -m \"Add responsive contact page\"",
+  "language": "sh",
+  "exercise": "Create a practice repository, edit one heading, inspect the diff and commit the change.",
+  "hint": "Read the staged diff before committing. Use a test folder without secrets.",
+  "quiz": {
+    "question": "Which command shows staged changes?",
+    "options": [
+      "git diff --cached",
+      "git status --delete",
+      "git push --all"
+    ],
+    "correct": 0,
+    "explanation": "The cached diff compares the staged snapshot with the last commit."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://git-scm.com/docs/git-diff"
+  }
+}

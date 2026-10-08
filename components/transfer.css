@@ -1,0 +1,77 @@
+.transfer-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  color: #dbe5ec;
+  line-height: 1.7;
+}
+.transfer-home {
+  display: block;
+  margin-bottom: 44px;
+  color: #a0b5c5;
+}
+.transfer-eyebrow,
+.transfer-step {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #7bbfbe;
+}
+.transfer-page h1 {
+  margin: 12px 0 18px;
+  font-size: clamp(32px, 6vw, 48px);
+  line-height: 1.15;
+}
+.transfer-page h2 {
+  margin: 8px 0 12px;
+  font-size: 23px;
+}
+.transfer-page p {
+  color: #a6b9c7;
+}
+.transfer-page section {
+  margin: 26px 0;
+  padding: 26px;
+  background: #0b131b;
+  border: 1px solid #24333f;
+  border-radius: 16px;
+}
+.transfer-page button {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border-radius: 9px;
+  background: #d3efea;
+  color: #0c2420;
+  font-weight: 650;
+}
+.transfer-page label {
+  display: block;
+  margin: 20px 0 10px;
+}
+.transfer-page input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  font-size: 14px;
+}
+.transfer-page .transfer-error {
+  color: #ffc0b4;
+}
+.transfer-page .transfer-success {
+  color: #a7e5ce;
+}
+.transfer-preview {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #24333f;
+}
+.transfer-note {
+  font-size: 13px;
+}
+@media (max-width: 480px) {
+  .transfer-page {
+    padding: 28px 16px;
+  }
+  .transfer-page section {
+    padding: 20px;
+  }
+}

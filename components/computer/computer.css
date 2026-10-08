@@ -1,0 +1,313 @@
+.computer-app {
+  --web-accent: #aedbd5;
+  background: #0b1114;
+}
+.computer-app .web-eyebrow,
+.computer-app .web-meta,
+.computer-app .web-progress strong {
+  color: #afd2cd;
+}
+.computer-app .web-header nav a[aria-current],
+.computer-app .web-group button[aria-current] {
+  color: #d4f0eb;
+  background: #aedbd510;
+  border-color: #aedbd533;
+}
+.computer-app .web-primary {
+  background: #aedbd5;
+  color: #152a29;
+}
+.computer-app .web-primary:hover:not(:disabled) {
+  background: #d3efe9;
+  color: #152a29;
+}
+.computer-app .web-group button > span,
+.computer-app .web-group summary::before,
+.computer-app .web-text-button {
+  color: #afd2cd;
+}
+.computer-app input[type="radio"],
+.computer-app input[type="checkbox"] {
+  accent-color: #aedbd5;
+}
+.computer-app .web-progress progress::-webkit-progress-value {
+  background: #aedbd5;
+}
+.computer-app .web-progress progress::-moz-progress-bar {
+  background: #aedbd5;
+}
+.computer-welcome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 30px;
+  background: #aedbd507;
+  border-bottom: 1px solid #aedbd520;
+  color: #cae4df;
+}
+.computer-welcome > div {
+  flex: 1;
+  min-width: 160px;
+}
+.computer-welcome strong {
+  font-weight: 500;
+  font-size: 15px;
+}
+.computer-welcome p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #a6b8bf;
+  margin: 7px 0 0;
+}
+.computer-version {
+  font-size: 12px;
+  display: grid;
+  gap: 8px;
+}
+.computer-version select {
+  padding: 10px;
+  background: #101c21;
+  border: 1px solid #aedbd540;
+  border-radius: 5px;
+  color: #daebe7;
+  font: inherit;
+}
+.computer-support {
+  margin: 0;
+  padding: 17px 30px;
+  background: #d4b2770a;
+  border-bottom: 1px solid #d4b27722;
+  font-size: 13px;
+  color: #d3c3a9;
+  line-height: 1.8;
+}
+.computer-support a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.computer-steps {
+  padding: 0;
+  list-style: none;
+  margin: 32px 0;
+}
+.computer-steps li {
+  display: flex;
+  gap: 15px;
+  margin: 24px 0;
+  align-items: flex-start;
+}
+.computer-steps li > span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #aedbd533;
+  color: #aedbd5;
+  margin-top: 3px;
+}
+.computer-steps p {
+  color: #c0cbd2;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0;
+}
+.computer-app textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #aedbd535;
+  border-radius: 6px;
+  background: #080e12;
+  color: #e2eeeb;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.8;
+  resize: vertical;
+}
+.computer-app :is(textarea, select, button, a, input):focus-visible {
+  outline: 2px solid #aedbd5;
+  outline-offset: 3px;
+}
+.computer-app .web-exercise {
+  border-left-color: #aedbd5;
+  background: #aedbd507;
+}
+.computer-app .web-exercise > p,
+.computer-app .web-check label {
+  font-size: 14px;
+}
+.computer-app .web-exercise h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d1e2de;
+  margin: 22px 0 8px;
+}
+.computer-review {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #b8c8ce;
+  line-height: 1.8;
+}
+.computer-review li {
+  padding: 4px 0;
+}
+.computer-notes {
+  margin: 32px 0;
+}
+.computer-notes > label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.computer-notes-actions,
+.computer-pad-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+.computer-app .web-check {
+  border-color: #aedbd52a;
+  background: #101b20;
+}
+.computer-app .web-check legend {
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 0;
+  margin: 18px 0 8px;
+}
+.computer-pad,
+.computer-finished {
+  margin: 28px 0;
+  padding: 24px;
+  border: 1px solid #aedbd535;
+  border-radius: 8px;
+  background: #aedbd508;
+}
+.computer-pad h3 {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c1e2da;
+}
+.computer-pad p,
+.computer-finished p {
+  font-size: 14px;
+  color: #b7c9cd;
+  line-height: 1.8;
+}
+.computer-pad label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.computer-pad .computer-target {
+  margin: 20px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 150px;
+  min-height: 110px;
+  padding: 18px;
+  color: #c8e2dc;
+  background: #142427;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+.computer-target.selected {
+  border-color: #aedbd5;
+  background: #aedbd51c;
+}
+.computer-pad small {
+  color: #9eb5bc;
+  line-height: 1.7;
+  display: block;
+}
+.computer-pad .computer-pad-status {
+  color: #bfdebd;
+  min-height: 25px;
+}
+.computer-pad .computer-typing-target {
+  border-left: 3px solid #aedbd5;
+  padding: 14px;
+  font-size: 17px;
+  background: #0003;
+  color: #e2eeeb;
+}
+.computer-practice-menu {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #aedbd540;
+  border-radius: 5px;
+}
+.computer-finished {
+  color: #c1e2da;
+}
+@media (max-width: 700px) {
+  .computer-welcome,
+  .computer-support {
+    padding: 20px;
+  }
+  .computer-pad {
+    padding: 18px;
+  }
+  .computer-app .web-header nav a {
+    padding: 8px;
+  }
+  .computer-app .web-lesson-navigation {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .computer-app .web-lesson-navigation button {
+    font-size: 11px;
+  }
+}
+
+/* Keep instructions comfortably readable across the whole course. */
+.computer-welcome strong,
+.computer-welcome p,
+.computer-support,
+.computer-steps p,
+.computer-app textarea,
+.computer-app .web-exercise > p,
+.computer-app .web-check label,
+.computer-review,
+.computer-pad p,
+.computer-finished p,
+.computer-pad label {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.computer-welcome p,
+.computer-steps p,
+.computer-review,
+.computer-pad p,
+.computer-finished p {
+  color: #c2d0d5;
+}
+.computer-version,
+.computer-pad small {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.computer-steps li {
+  margin: 26px 0;
+}
+.computer-pad,
+.computer-finished {
+  padding: 28px;
+  margin: 34px 0;
+}
+
+@media (max-width: 700px) {
+  .computer-pad,
+  .computer-finished {
+    padding: 20px;
+  }
+}

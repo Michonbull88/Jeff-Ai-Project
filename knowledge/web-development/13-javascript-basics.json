@@ -1,0 +1,39 @@
+{
+  "id": "javascript-basics",
+  "order": 13,
+  "title": "JavaScript fundamentals",
+  "group": "JavaScript",
+  "keywords": [
+    "javascript",
+    "js",
+    "console",
+    "statements",
+    "operators",
+    "logic",
+    "script"
+  ],
+  "goal": "Use JavaScript to calculate a result and inspect it.",
+  "explanation": [
+    "JavaScript adds behaviour and performs calculations. Start with small statements in developer tools, then move code into a script file.",
+    "Use console.log while investigating values. A syntax error means the code could not be parsed; a runtime error occurs while code is executing.",
+    "Keep logic separate from display where practical. First make a calculation return the right result, then connect it to the page. Never paste unknown code into developer tools on a signed-in site."
+  ],
+  "code": "const price = 80;\nconst quantity = 3;\nconst total = price * quantity;\nconsole.log(total); // 240",
+  "language": "javascript",
+  "exercise": "Calculate the price of four items at R25 each and display the total in the console.",
+  "hint": "Use * for multiplication. Strings and numbers are different types.",
+  "quiz": {
+    "question": "What does 80 * 3 evaluate to?",
+    "options": [
+      "83",
+      "240",
+      "803"
+    ],
+    "correct": 1,
+    "explanation": "The multiplication operator calculates a numeric product."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction"
+  }
+}

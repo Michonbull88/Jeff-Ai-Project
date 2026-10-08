@@ -1,0 +1,39 @@
+{
+  "id": "dom",
+  "order": 17,
+  "title": "DOM manipulation",
+  "group": "JavaScript",
+  "keywords": [
+    "dom",
+    "document",
+    "queryselector",
+    "textcontent",
+    "element",
+    "navigation",
+    "menu"
+  ],
+  "goal": "Read and update an element on the page.",
+  "explanation": [
+    "The Document Object Model represents a document as nodes. querySelector returns the first matching element, or null if no match exists.",
+    "Use textContent to insert plain text. Setting innerHTML parses markup and is dangerous when the value comes from an untrusted source.",
+    "Run code after the relevant elements exist, for example with a deferred external script. Check for a missing element when code can run on different pages."
+  ],
+  "code": "const message = document.querySelector(\"#message\");\nif (message) {\n  message.textContent = \"Welcome to my website.\";\n}",
+  "language": "javascript",
+  "exercise": "Add a paragraph with id=\"message\" and change its text with JavaScript.",
+  "hint": "The selector needs # because you are looking up an id.",
+  "quiz": {
+    "question": "Which property safely inserts a visitor name as plain text?",
+    "options": [
+      "innerHTML",
+      "textContent",
+      "outerHTML"
+    ],
+    "correct": 1,
+    "explanation": "textContent treats the value as text rather than executable markup."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+  }
+}

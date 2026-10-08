@@ -1,0 +1,35 @@
+name: Build JEFF installers
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Linux installer archive
+        run: |
+          mkdir -p stage dist
+          tar --exclude=node_modules --exclude=.next --exclude=.jeff-data --exclude=.env.local --exclude=dist --exclude=.git --exclude=tests --exclude=test-results -czf stage/jeff-app.tar.gz .
+          cp packaging/linux/install.sh stage/install.sh
+          cp "packaging/linux/START HERE.txt" "stage/START HERE.txt"
+          chmod +x stage/install.sh
+          tar -C stage -czf dist/JEFF-Setup-Linux-x64.tar.gz .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JEFF-Setup-Linux-x64
+          path: dist/JEFF-Setup-Linux-x64.tar.gz
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build macOS disk image
+        run: bash packaging/macos/build-dmg.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JEFF-Setup-macOS
+          path: dist/JEFF-Setup-macOS.dmg

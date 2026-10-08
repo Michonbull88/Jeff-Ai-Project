@@ -1,0 +1,38 @@
+{
+  "id": "css-fundamentals",
+  "order": 4,
+  "title": "CSS fundamentals",
+  "group": "CSS & layout",
+  "keywords": [
+    "css",
+    "selectors",
+    "cascade",
+    "specificity",
+    "inheritance",
+    "styles"
+  ],
+  "goal": "Apply a small, predictable set of styles.",
+  "explanation": [
+    "CSS rules combine selectors with declarations. A class selector such as .card targets elements with that class. Separate structure from presentation so one rule can style many elements.",
+    "The cascade decides which declaration wins. Origin, importance, layers, specificity and order all matter; within otherwise equal rules, a later declaration wins. Avoid solving every conflict with !important.",
+    "Some properties, such as colour, are inherited. Others, such as margins, are not normally inherited. Use the browser Styles and Computed panels to see the winning value."
+  ],
+  "code": ".card {\n  color: #17352b;\n  background: #edf7f1;\n  border-radius: 12px;\n}\n.card h2 { font-size: 1.5rem; }",
+  "language": "css",
+  "exercise": "Style three cards with a shared class, then inspect the computed heading size.",
+  "hint": "Give each card class=\"card\" and write one shared rule.",
+  "quiz": {
+    "question": "Which selector targets class=\"card\"?",
+    "options": [
+      "#card",
+      ".card",
+      "@card"
+    ],
+    "correct": 1,
+    "explanation": "A dot selects a class. A hash selects an id."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "html-fundamentals",
+  "order": 2,
+  "title": "HTML fundamentals",
+  "group": "HTML & foundations",
+  "keywords": [
+    "html",
+    "elements",
+    "tags",
+    "headings",
+    "paragraph",
+    "links",
+    "structure"
+  ],
+  "goal": "Build a page with meaningful headings, text and links.",
+  "explanation": [
+    "HTML is markup: elements describe the role of content. Most elements have opening and closing tags. Nest elements correctly rather than choosing tags only for their default appearance.",
+    "Use one clear main heading for this small page, then organise sections with suitable heading levels. A link navigates to a destination; a button performs an action.",
+    "The document language helps assistive technology. The viewport meta tag makes mobile layout behave as expected. Give links useful text rather than repeating “click here”."
+  ],
+  "code": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>My first site</title>\n</head>\n<body>\n  <main><h1>Hello, web!</h1><p>I am learning with JEFF.</p></main>\n</body>\n</html>",
+  "language": "html",
+  "exercise": "Create an about page with a heading, two paragraphs and a link to another page.",
+  "hint": "Use h1, p and a with an href attribute.",
+  "quiz": {
+    "question": "Which element should navigate to another page?",
+    "options": [
+      "A div with an onclick handler",
+      "An a element with href",
+      "A span styled blue"
+    ],
+    "correct": 1,
+    "explanation": "A real link supports keyboard use, opening in a new tab and browser navigation."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax"
+  }
+}

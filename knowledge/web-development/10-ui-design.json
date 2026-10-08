@@ -1,0 +1,41 @@
+{
+  "id": "ui-design",
+  "order": 10,
+  "title": "UI design: hierarchy and colour",
+  "group": "Design & accessibility",
+  "keywords": [
+    "ui",
+    "visual design",
+    "colour",
+    "color",
+    "contrast",
+    "hierarchy",
+    "spacing",
+    "typography",
+    "buttons"
+  ],
+  "goal": "Create a clear visual hierarchy with reusable styles.",
+  "explanation": [
+    "Visual hierarchy guides attention. Give the page one clear primary action, group related controls, and leave enough space between unrelated sections.",
+    "Use a small type scale, a consistent spacing scale and reusable colour tokens. Colour can reinforce meaning, but labels and icons must also communicate important states.",
+    "Check contrast rather than judging by appearance. Make interactive elements look interactive, and provide visible hover, focus, disabled and error states."
+  ],
+  "code": ":root {\n  --space: 0.75rem;\n  --ink: #142d24;\n  --surface: #f3faf6;\n  --action: #176345;\n}\n.card { padding: calc(var(--space) * 2); color: var(--ink); background: var(--surface); }",
+  "language": "css",
+  "exercise": "Design a contact card with a title, helpful text and one primary button. Explain why the button gets visual emphasis.",
+  "hint": "Start with hierarchy and spacing before adding decoration.",
+  "quiz": {
+    "question": "Which design communicates an error most reliably?",
+    "options": [
+      "Red colour alone",
+      "A red border plus an explanatory text message",
+      "An animation with no text"
+    ],
+    "correct": 1,
+    "explanation": "Text explains the problem even when colour or motion is not perceived."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://www.w3.org/WAI/tips/designing/"
+  }
+}

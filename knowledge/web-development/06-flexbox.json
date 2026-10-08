@@ -1,0 +1,43 @@
+{
+  "id": "flexbox",
+  "order": 6,
+  "title": "Flexbox",
+  "group": "CSS & layout",
+  "keywords": [
+    "flexbox",
+    "flex",
+    "main axis",
+    "cross axis",
+    "justify-content",
+    "align-items",
+    "navigation",
+    "navbar",
+    "row",
+    "column",
+    "center"
+  ],
+  "goal": "Arrange and align items along a main axis.",
+  "explanation": [
+    "display: flex makes direct children flex items. The flex-direction property defines the main axis: row follows the inline direction, while column follows the block direction.",
+    "justify-content distributes free space along the main axis. align-items aligns items along the cross axis. With a row in a normal horizontal writing mode, these are horizontal and vertical respectively.",
+    "Use gap for consistent spacing and flex-wrap: wrap when items should move to another line. For a responsive navigation bar, combine semantic nav links with wrapping; use a media query to switch to a column if needed."
+  ],
+  "code": ".cards {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1rem;\n  justify-content: center;\n  align-items: stretch;\n}\n.card { flex: 1 1 14rem; }\n@media (max-width: 48rem) {\n  .cards { flex-direction: column; }\n}",
+  "language": "css",
+  "exercise": "Arrange three cards in a row and stack them below 48rem. Resize the preview to test both layouts.",
+  "hint": "Put display: flex on the parent, not each card.",
+  "quiz": {
+    "question": "Which property controls distribution along the main axis?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "font-weight"
+    ],
+    "correct": 1,
+    "explanation": "justify-content follows the main axis. Its direction changes when flex-direction changes."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "responsive-design",
+  "order": 8,
+  "title": "Responsive web design",
+  "group": "CSS & layout",
+  "keywords": [
+    "responsive",
+    "mobile",
+    "media query",
+    "breakpoint",
+    "viewport",
+    "navigation",
+    "navbar",
+    "small screen"
+  ],
+  "goal": "Adapt a layout to its content and available width.",
+  "explanation": [
+    "Start with a usable narrow layout. Use flexible widths, wrapping, and images that fit their containers. Add a breakpoint when content needs a different arrangement, rather than aiming at one phone model.",
+    "Media queries apply rules conditionally. In a mobile-first stylesheet, min-width commonly adds larger-screen layouts. A responsive navigation can wrap links before needing a collapsible menu.",
+    "Test at several widths, increased text size and keyboard navigation. A layout that fits at one width may still clip content at another. Include the viewport meta tag in the page head."
+  ],
+  "code": ".layout { display: grid; gap: 1rem; }\nimg { max-width: 100%; height: auto; }\n@media (min-width: 48rem) {\n  .layout { grid-template-columns: 2fr 1fr; }\n}",
+  "language": "css",
+  "exercise": "Build a single-column article and sidebar that becomes two columns on a wider screen.",
+  "hint": "Use min-width to add the wider layout after the narrow default.",
+  "quiz": {
+    "question": "What should primarily guide a breakpoint?",
+    "options": [
+      "A specific phone brand",
+      "The width where the content needs a layout change",
+      "A random round number"
+    ],
+    "correct": 1,
+    "explanation": "Choose breakpoints by observing your content, then test a range of sizes."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+  }
+}

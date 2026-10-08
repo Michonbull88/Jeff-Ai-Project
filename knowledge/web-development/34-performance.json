@@ -1,0 +1,40 @@
+{
+  "id": "performance",
+  "order": 34,
+  "title": "Website performance",
+  "group": "Shipping & projects",
+  "keywords": [
+    "performance",
+    "speed",
+    "lcp",
+    "cls",
+    "inp",
+    "images",
+    "lazy loading",
+    "measurement"
+  ],
+  "goal": "Measure a loading or interaction problem before changing code.",
+  "explanation": [
+    "Performance includes loading, responsiveness and visual stability. Use developer tools and, when available, real-user measurements to find the actual bottleneck.",
+    "Serve appropriately sized images and reserve their dimensions to reduce layout shifts. Lazy-load suitable offscreen images, but do not blindly lazy-load the main hero image.",
+    "Reduce unnecessary JavaScript and expensive rendering work. Change one cause at a time, then measure again on a realistic device and connection."
+  ],
+  "code": "<img src=\"project-card.webp\" alt=\"Preview of a bakery website\"\n     width=\"640\" height=\"400\" loading=\"lazy\">",
+  "language": "html",
+  "exercise": "Inspect a page with large images. Identify one oversized asset and reserve image dimensions.",
+  "hint": "Measure before and after. Avoid treating a single lab score as the whole user experience.",
+  "quiz": {
+    "question": "Why declare image width and height?",
+    "options": [
+      "To reserve layout space while it loads",
+      "To encrypt the image",
+      "To disable the network"
+    ],
+    "correct": 0,
+    "explanation": "Known dimensions help the browser reserve space and reduce unexpected movement."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://web.dev/articles/optimize-cls"
+  }
+}

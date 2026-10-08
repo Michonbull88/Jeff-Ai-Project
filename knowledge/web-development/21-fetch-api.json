@@ -1,0 +1,41 @@
+{
+  "id": "fetch-api",
+  "order": 21,
+  "title": "The Fetch API",
+  "group": "JavaScript",
+  "keywords": [
+    "fetch",
+    "http",
+    "request",
+    "response",
+    "json",
+    "network",
+    "abort",
+    "error",
+    "status"
+  ],
+  "goal": "Fetch data and distinguish HTTP errors from network failures.",
+  "explanation": [
+    "fetch returns a promise for a Response. A 404 or 500 response normally does not reject that promise, so check response.ok before treating it as success.",
+    "Reading response.json is also asynchronous and can fail if the response body is not valid JSON. Show useful loading, empty and error states.",
+    "Use AbortController to cancel requests that no longer matter. Do not put private API keys into client-side JavaScript. The playground has networking disabled, so run network examples in your own project."
+  ],
+  "code": "async function loadProducts(signal) {\n  const response = await fetch(\"/api/products\", { signal });\n  if (!response.ok) throw new Error(`HTTP ${response.status}`);\n  return response.json();\n}",
+  "language": "javascript",
+  "exercise": "Write a fetch function that rejects an HTTP 500 response and handles cancellation.",
+  "hint": "Check response.ok before parsing a successful payload.",
+  "quiz": {
+    "question": "Does fetch automatically reject an HTTP 404 response?",
+    "options": [
+      "Yes, always",
+      "No; check response.ok",
+      "Only for JSON"
+    ],
+    "correct": 1,
+    "explanation": "A received HTTP error is still a response. A network failure is different."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+  }
+}

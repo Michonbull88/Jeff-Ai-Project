@@ -1,0 +1,40 @@
+{
+  "id": "online-stores",
+  "order": 39,
+  "title": "Project: an online store",
+  "group": "Shipping & projects",
+  "keywords": [
+    "store",
+    "ecommerce",
+    "cart",
+    "checkout",
+    "payment",
+    "inventory",
+    "webhook",
+    "orders"
+  ],
+  "goal": "Understand a store flow and its server-side trust boundaries.",
+  "explanation": [
+    "Start with a fictional product catalogue and a cart. A cart displayed in the browser is a user-controlled request, not an authoritative price or stock record.",
+    "The server must recalculate prices and availability from trusted data. Use a payment provider’s supported checkout rather than collecting raw card details in a homemade form.",
+    "An order should not become paid just because the browser visits a success URL. Verify the provider’s server-to-server confirmation according to its documentation, handle repeat events safely, and test in a sandbox."
+  ],
+  "code": "Catalogue → cart → server validates prices and stock\n→ provider test checkout\n→ server verifies payment confirmation\n→ order status updated safely",
+  "language": "text",
+  "exercise": "Sketch a test-only store flow. Identify which values must be verified on the server.",
+  "hint": "Treat totals and product prices sent by a browser as untrusted.",
+  "quiz": {
+    "question": "Where should the final payable total be calculated?",
+    "options": [
+      "Only in the browser cart",
+      "On the server from trusted prices",
+      "In the page title"
+    ],
+    "correct": 1,
+    "explanation": "The client can be modified, so the server must validate the order and calculate its total."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://docs.stripe.com/payments/checkout"
+  }
+}

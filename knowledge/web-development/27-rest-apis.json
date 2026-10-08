@@ -1,0 +1,42 @@
+{
+  "id": "rest-apis",
+  "order": 27,
+  "title": "REST APIs",
+  "group": "Tools & backend",
+  "keywords": [
+    "rest",
+    "api",
+    "http",
+    "get",
+    "post",
+    "put",
+    "patch",
+    "delete",
+    "status",
+    "endpoint"
+  ],
+  "goal": "Design predictable resource-oriented endpoints.",
+  "explanation": [
+    "An API exposes operations and data through a contract. Resource-oriented HTTP APIs commonly use GET to read, POST to create, PATCH for partial updates and DELETE to remove.",
+    "Use status codes consistently: 200 for a successful response, 201 for creation, 400 for invalid input, 401 for missing/invalid authentication and 403 when access is forbidden.",
+    "Validate every request and enforce authorisation on every resource. Document request/response shapes and failure cases. A predictable error body helps clients recover."
+  ],
+  "code": "GET /api/products\nGET /api/products/42\nPOST /api/products\nPATCH /api/products/42\nDELETE /api/products/42",
+  "language": "http",
+  "exercise": "Design endpoints for notes. Define one request, a successful response and an invalid-input response.",
+  "hint": "Name resources rather than using paths such as /doEverything.",
+  "quiz": {
+    "question": "Which status commonly indicates successful creation?",
+    "options": [
+      "201",
+      "404",
+      "500"
+    ],
+    "correct": 0,
+    "explanation": "201 Created indicates that a request created a resource."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"
+  }
+}

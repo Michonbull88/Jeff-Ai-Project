@@ -1,0 +1,39 @@
+{
+  "id": "events",
+  "order": 18,
+  "title": "Events",
+  "group": "JavaScript",
+  "keywords": [
+    "event",
+    "click",
+    "submit",
+    "listener",
+    "button",
+    "interaction",
+    "preventdefault"
+  ],
+  "goal": "Respond to an interaction using an event listener.",
+  "explanation": [
+    "addEventListener connects a callback to an event. Supply the function itself; calling it immediately would run it during setup rather than on the event.",
+    "Use native controls to get standard interaction behaviour. A button can emit click from mouse, touch or keyboard activation.",
+    "For a form submission handled by JavaScript, preventDefault can stop the normal navigation. Remove listeners when the component or context that owns them is disposed."
+  ],
+  "code": "const button = document.querySelector(\"#greet\");\nconst output = document.querySelector(\"#message\");\nbutton?.addEventListener(\"click\", () => {\n  if (output) output.textContent = \"Hello!\";\n});",
+  "language": "javascript",
+  "exercise": "Create a button that changes a paragraph when activated by mouse or keyboard.",
+  "hint": "Use addEventListener with a callback, not the result of calling one.",
+  "quiz": {
+    "question": "When should the callback run?",
+    "options": [
+      "While the listener is being registered",
+      "When the event occurs",
+      "Only when the page closes"
+    ],
+    "correct": 1,
+    "explanation": "The event system invokes the registered callback when the event is dispatched."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events"
+  }
+}

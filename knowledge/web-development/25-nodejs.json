@@ -1,0 +1,39 @@
+{
+  "id": "nodejs",
+  "order": 25,
+  "title": "Node.js",
+  "group": "Tools & backend",
+  "keywords": [
+    "node",
+    "nodejs",
+    "runtime",
+    "server",
+    "filesystem",
+    "npm",
+    "package"
+  ],
+  "goal": "Distinguish server-side JavaScript from browser JavaScript.",
+  "explanation": [
+    "Node.js runs JavaScript outside the browser. It can access operating-system resources under the permissions of its process. Browser globals such as document are not available by default.",
+    "A package.json describes a project and its scripts/dependencies. Commit the dependency lockfile so installs can reproduce the selected versions.",
+    "Keep secrets on the server, validate incoming data and avoid blocking long operations on the event loop. Use supported runtime releases and review dependencies before adding them."
+  ],
+  "code": "import { createServer } from \"node:http\";\nconst server = createServer((request, response) => {\n  response.writeHead(200, { \"Content-Type\": \"text/plain\" });\n  response.end(\"Hello from Node\");\n});\nserver.listen(3001, \"127.0.0.1\");",
+  "language": "javascript",
+  "exercise": "Run this example as server.mjs in a local practice folder and visit port 3001. Stop it with Ctrl+C.",
+  "hint": "The .mjs extension identifies an ES module. This server does not run inside the browser playground.",
+  "quiz": {
+    "question": "Which object belongs to browser DOM code rather than ordinary Node.js?",
+    "options": [
+      "document",
+      "process",
+      "Buffer"
+    ],
+    "correct": 0,
+    "explanation": "document represents a browser document; Node does not provide a page DOM by default."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+  }
+}

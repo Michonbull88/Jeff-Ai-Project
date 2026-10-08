@@ -1,0 +1,39 @@
+{
+  "id": "box-model",
+  "order": 5,
+  "title": "The CSS box model",
+  "group": "CSS & layout",
+  "keywords": [
+    "margin",
+    "padding",
+    "border",
+    "box model",
+    "spacing",
+    "width",
+    "box-sizing"
+  ],
+  "goal": "Understand the difference between inner and outer spacing.",
+  "explanation": [
+    "A box has content, padding, a border and margin. Padding separates content from the border; margin creates space outside the border.",
+    "With content-box, a declared width describes the content box. Padding and borders add to the rendered width. With border-box, the declared width includes padding and borders; margin stays outside.",
+    "For predictable sizing, apply box-sizing: border-box to elements and pseudo-elements. Inspect the box-model diagram in developer tools before guessing at unexpected gaps."
+  ],
+  "code": "*, *::before, *::after { box-sizing: border-box; }\n.card {\n  width: 240px;\n  padding: 20px;\n  border: 2px solid #19704c;\n  margin: 16px;\n}",
+  "language": "css",
+  "exercise": "Give a card 20px of inner spacing and 16px of outer spacing. Compare content-box with border-box.",
+  "hint": "Inner means padding; outer means margin.",
+  "quiz": {
+    "question": "Which property adds space between content and its border?",
+    "options": [
+      "margin",
+      "padding",
+      "outline"
+    ],
+    "correct": 1,
+    "explanation": "Padding is inside the border. Margin separates the box from surrounding boxes."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model"
+  }
+}

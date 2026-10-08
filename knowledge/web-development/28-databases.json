@@ -1,0 +1,40 @@
+{
+  "id": "databases",
+  "order": 28,
+  "title": "Databases",
+  "group": "Tools & backend",
+  "keywords": [
+    "database",
+    "table",
+    "record",
+    "schema",
+    "primary key",
+    "foreign key",
+    "index",
+    "transaction"
+  ],
+  "goal": "Model related data and choose stable identifiers.",
+  "explanation": [
+    "A database stores and queries data beyond a single request. In a relational design, tables describe entities and rows describe records.",
+    "Primary keys identify rows; foreign keys relate records. Constraints such as NOT NULL and UNIQUE enforce important rules close to the data.",
+    "Use transactions for changes that must succeed together. Indexes can speed selected queries but cost storage and update work. Backups need restore tests, not just a scheduled job."
+  ],
+  "code": "Customer: id, name, email\nOrder: id, customer_id, created_at\nOrderItem: order_id, product_id, quantity, unit_price",
+  "language": "text",
+  "exercise": "Sketch customers and orders. Identify primary keys and the foreign key linking an order to its customer.",
+  "hint": "Do not use a display name as a stable identifier.",
+  "quiz": {
+    "question": "What does a foreign key represent?",
+    "options": [
+      "A relationship to a referenced key",
+      "An encrypted password",
+      "A CSS variable"
+    ],
+    "correct": 0,
+    "explanation": "A foreign key links records and can enforce referential integrity."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://www.postgresql.org/docs/current/tutorial-fk.html"
+  }
+}

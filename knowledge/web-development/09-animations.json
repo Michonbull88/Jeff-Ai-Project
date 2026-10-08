@@ -1,0 +1,38 @@
+{
+  "id": "animations",
+  "order": 9,
+  "title": "Animations and transitions",
+  "group": "CSS & layout",
+  "keywords": [
+    "animation",
+    "transition",
+    "keyframes",
+    "reduced motion",
+    "hover",
+    "focus"
+  ],
+  "goal": "Use motion to explain state without blocking access.",
+  "explanation": [
+    "A transition animates a property between states. A keyframe animation can describe several stages. Keep motion purposeful: a focus or hover transition can acknowledge interaction.",
+    "Prefer short effects and test performance. Transform and opacity often avoid layout work, but do not assume an effect is fast without measuring it.",
+    "Respect prefers-reduced-motion. Do not make essential information depend only on animation, hover, or colour. Keyboard users should receive clear focus feedback."
+  ],
+  "code": ".action { transition: transform 150ms ease; }\n.action:hover { transform: translateY(-2px); }\n.action:focus-visible { outline: 3px solid #15604a; outline-offset: 3px; }\n@media (prefers-reduced-motion: reduce) {\n  .action { transition: none; }\n}",
+  "language": "css",
+  "exercise": "Add a subtle button transition and a reduced-motion alternative.",
+  "hint": "Use a media query for prefers-reduced-motion: reduce.",
+  "quiz": {
+    "question": "Which preference should you respect when reducing decorative motion?",
+    "options": [
+      "prefers-reduced-motion",
+      "font-display",
+      "autocomplete"
+    ],
+    "correct": 0,
+    "explanation": "The reduced-motion media feature lets the page respond to that user preference."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "react",
+  "order": 32,
+  "title": "React",
+  "group": "Shipping & projects",
+  "keywords": [
+    "react",
+    "component",
+    "props",
+    "state",
+    "hooks",
+    "usestate",
+    "jsx",
+    "keys",
+    "render"
+  ],
+  "goal": "Build a small component with state and predictable rendering.",
+  "explanation": [
+    "React components describe UI from props and state. JSX resembles markup but is JavaScript syntax that needs a suitable build environment.",
+    "Use state for values that affect rendering. Treat objects and arrays in state as immutable; create updated values rather than mutating the existing ones.",
+    "When rendering a list, give each item a stable key from its data. Call hooks at the top level of a component or custom hook, not inside conditions. This lesson is an introduction, not a substitute for the full React guide."
+  ],
+  "code": "import { useState } from \"react\";\nexport default function Counter() {\n  const [count, setCount] = useState(0);\n  return <button onClick={() => setCount(value => value + 1)}>\n    Count: {count}\n  </button>;\n}",
+  "language": "jsx",
+  "exercise": "In a React project, build a counter with increment and reset buttons. Explain which value is state.",
+  "hint": "This JSX needs a React build tool; the plain HTML playground does not compile it.",
+  "quiz": {
+    "question": "What should you use as a list key when each item has a stable id?",
+    "options": [
+      "Math.random() on each render",
+      "The stable item id",
+      "The current time"
+    ],
+    "correct": 1,
+    "explanation": "A stable data identifier lets React keep track of items across updates."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://react.dev/learn/rendering-lists"
+  }
+}

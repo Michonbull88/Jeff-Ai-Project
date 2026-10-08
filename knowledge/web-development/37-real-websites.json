@@ -1,0 +1,39 @@
+{
+  "id": "real-websites",
+  "order": 37,
+  "title": "Project: a real website",
+  "group": "Shipping & projects",
+  "keywords": [
+    "portfolio",
+    "project",
+    "website",
+    "brief",
+    "client",
+    "content",
+    "responsive"
+  ],
+  "goal": "Combine structure, design and responsiveness into a small site.",
+  "explanation": [
+    "Build a portfolio or a fictional local-business site with a clear audience and primary action. Write the content before polishing the visual details.",
+    "Include an introduction, services or projects, and contact information. Use semantic HTML, reusable styles, readable typography and a responsive layout.",
+    "Test keyboard navigation, narrow screens, links and missing content. Keep the project small enough to finish, then record improvements for a later iteration."
+  ],
+  "code": "Project brief\nAudience: local businesses\nGoal: request a consultation\nPages: Home, Work, Contact\nSuccess: visitors understand the offer and can make contact\nChecks: keyboard, mobile layout, real links, readable contrast",
+  "language": "text",
+  "exercise": "Build the three-page site and write a short explanation of three design decisions.",
+  "hint": "Choose one audience and one primary action instead of adding every possible feature.",
+  "quiz": {
+    "question": "Which is a useful acceptance criterion?",
+    "options": [
+      "It looks modern",
+      "A keyboard user can reach and activate the contact link",
+      "It has as many animations as possible"
+    ],
+    "correct": 1,
+    "explanation": "A concrete observable criterion can be tested."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+  }
+}

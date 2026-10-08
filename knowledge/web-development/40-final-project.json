@@ -1,0 +1,39 @@
+{
+  "id": "final-project",
+  "order": 40,
+  "title": "Final project and review",
+  "group": "Shipping & projects",
+  "keywords": [
+    "final",
+    "capstone",
+    "project",
+    "review",
+    "testing",
+    "portfolio",
+    "documentation"
+  ],
+  "goal": "Deliver a small project with evidence that its main flows work.",
+  "explanation": [
+    "Choose a focused brief: a responsive business site, a task application or a test-only shop. State the audience, scope and success criteria before coding.",
+    "Implement a complete path through the project, then test keyboard use, responsiveness, input handling and failure states. For a backend, include authorisation checks and safe secret handling.",
+    "Write a README with startup instructions, limitations and validation evidence. Present what works and what remains. Completing this module’s knowledge check is not a professional certification or an automatic review of your project."
+  ],
+  "code": "Submission\n1. Project brief and acceptance criteria\n2. Working source and startup steps\n3. Screenshots of narrow and wide layouts\n4. Test notes for success and failure flows\n5. Known limitations and next improvements",
+  "language": "text",
+  "exercise": "Finish one project and use the checklist above to review it. Ask JEFF about a specific code excerpt or decision.",
+  "hint": "Keep scope small and make the core task work from beginning to end.",
+  "quiz": {
+    "question": "What makes a project handover useful?",
+    "options": [
+      "Only a screenshot",
+      "Working source, startup steps and validation notes",
+      "A list of unimplemented features"
+    ],
+    "correct": 1,
+    "explanation": "Another person should be able to run, assess and understand the delivered project."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+  }
+}

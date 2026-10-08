@@ -1,0 +1,38 @@
+{
+  "id": "functions",
+  "order": 15,
+  "title": "Functions",
+  "group": "JavaScript",
+  "keywords": [
+    "function",
+    "parameters",
+    "arguments",
+    "return",
+    "scope",
+    "arrow"
+  ],
+  "goal": "Extract a reusable calculation into a function.",
+  "explanation": [
+    "A function groups a task and may accept parameters. Arguments are the values supplied when you call it. return passes a result back to the caller.",
+    "Printing a value and returning it are different. console.log helps you inspect a result, but it does not make that result available to the calling expression.",
+    "Give functions clear names and keep each one focused. Test boundary values, such as zero quantity, before connecting the function to a form."
+  ],
+  "code": "function totalPrice(price, quantity) {\n  return price * quantity;\n}\nconsole.log(totalPrice(25, 4)); // 100",
+  "language": "javascript",
+  "exercise": "Write a function that converts minutes to seconds. Test 0, 1 and 2.5 minutes.",
+  "hint": "Multiply by 60 and return the result.",
+  "quiz": {
+    "question": "What sends a result back to the caller?",
+    "options": [
+      "console.log",
+      "return",
+      "A comment"
+    ],
+    "correct": 1,
+    "explanation": "return determines the value produced by the function call."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+  }
+}

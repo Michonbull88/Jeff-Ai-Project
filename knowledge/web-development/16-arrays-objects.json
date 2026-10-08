@@ -1,0 +1,40 @@
+{
+  "id": "arrays-objects",
+  "order": 16,
+  "title": "Arrays and objects",
+  "group": "JavaScript",
+  "keywords": [
+    "array",
+    "object",
+    "map",
+    "filter",
+    "find",
+    "properties",
+    "list",
+    "collection"
+  ],
+  "goal": "Model a list of products and transform it without unwanted mutation.",
+  "explanation": [
+    "An array represents an ordered collection. An object groups named properties. A products array can contain objects with id, name and price fields.",
+    "map creates an array of transformed values; filter creates an array of items that pass a condition; find returns the first matching item or undefined.",
+    "Use stable identifiers for records. Consider whether a method changes its input: sort mutates an array, while mapping or filtering creates a new array."
+  ],
+  "code": "const products = [{ id: 1, name: \"Notebook\", price: 35 }, { id: 2, name: \"Pen\", price: 8 }];\nconst affordable = products.filter(product => product.price < 20);\nconst names = affordable.map(product => product.name);\nconsole.log(names); // [\"Pen\"]",
+  "language": "javascript",
+  "exercise": "Create three products, filter those below R50, and produce their names.",
+  "hint": "Filter first, then map the remaining objects to their names.",
+  "quiz": {
+    "question": "Which method keeps only matching items?",
+    "options": [
+      "map",
+      "filter",
+      "find"
+    ],
+    "correct": 1,
+    "explanation": "filter returns a new array containing every item that passes the predicate."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+  }
+}

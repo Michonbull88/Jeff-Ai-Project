@@ -1,0 +1,40 @@
+{
+  "id": "grid",
+  "order": 7,
+  "title": "CSS Grid",
+  "group": "CSS & layout",
+  "keywords": [
+    "grid",
+    "columns",
+    "rows",
+    "tracks",
+    "minmax",
+    "repeat",
+    "auto-fit",
+    "gallery"
+  ],
+  "goal": "Create a layout with rows and columns.",
+  "explanation": [
+    "Grid is useful when both rows and columns matter. Define tracks on the grid container; its direct children become grid items.",
+    "The fr unit shares remaining space. repeat avoids repeating track definitions. minmax sets a minimum and maximum, and auto-fit can adapt the number of columns to available space.",
+    "Keep the document order meaningful. Visually reordering cards should not make keyboard focus or screen-reader reading order confusing."
+  ],
+  "code": ".gallery {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));\n  gap: 1rem;\n}",
+  "language": "css",
+  "exercise": "Make a responsive gallery of six cards and verify that a narrow view does not scroll horizontally.",
+  "hint": "Set display: grid on the gallery. Keep card widths flexible.",
+  "quiz": {
+    "question": "What does 1fr represent in Grid?",
+    "options": [
+      "One fixed pixel",
+      "A fraction of remaining track space",
+      "One font size"
+    ],
+    "correct": 1,
+    "explanation": "fr divides available space among flexible tracks; it is not a fixed measurement."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "deployment",
+  "order": 35,
+  "title": "Hosting and deployment",
+  "group": "Shipping & projects",
+  "keywords": [
+    "deploy",
+    "hosting",
+    "environment",
+    "https",
+    "build",
+    "secrets",
+    "rollback",
+    "production"
+  ],
+  "goal": "Prepare a build and a reversible release.",
+  "explanation": [
+    "A static site can be served as files; an application with a backend needs a compatible server/runtime. Understand which parts execute in the browser and which execute on the server.",
+    "Use separate development and production configuration. Keep server secrets out of client-exposed variables and built assets. Run relevant checks before release.",
+    "Configure HTTPS, health checks, logging without secrets and a rollback plan. Verify the deployed behaviour and links. A successful upload alone does not prove the application works."
+  ],
+  "code": "Release checklist\n- Review changes and configuration\n- Run tests and production build\n- Deploy to a preview environment\n- Verify core flows\n- Release with a rollback available\n- Monitor failures",
+  "language": "text",
+  "exercise": "Write a deployment checklist for a static portfolio and identify what would change for a Node backend.",
+  "hint": "Match the hosting environment to the runtime your project needs.",
+  "quiz": {
+    "question": "Where should a private database password live?",
+    "options": [
+      "In public browser JavaScript",
+      "In protected server configuration",
+      "In an HTML comment"
+    ],
+    "correct": 1,
+    "explanation": "Anything shipped to the browser can be inspected. Private credentials belong on the server."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website"
+  }
+}

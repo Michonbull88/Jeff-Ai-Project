@@ -1,0 +1,42 @@
+{
+  "id": "variables-types",
+  "order": 14,
+  "title": "Variables and data types",
+  "group": "JavaScript",
+  "keywords": [
+    "const",
+    "let",
+    "var",
+    "variables",
+    "types",
+    "string",
+    "number",
+    "boolean",
+    "null",
+    "undefined"
+  ],
+  "goal": "Choose a variable declaration and recognise basic value types.",
+  "explanation": [
+    "Use const when a binding will not be reassigned; use let when reassignment is part of the logic. const does not make the contents of an object immutable.",
+    "Strings contain text, numbers represent numeric values, and booleans are true or false. null commonly represents an intentional empty value; undefined often means a value has not been supplied.",
+    "Prefer explicit conversion when reading form fields: input values are strings. Check a numeric conversion with Number.isFinite before using it in a calculation."
+  ],
+  "code": "const name = \"Lebo\";\nlet score = 0;\nscore += 1;\nconst price = Number(\"25\");\nconsole.log(Number.isFinite(price)); // true",
+  "language": "javascript",
+  "exercise": "Create a name, an age and an isStudent value. Inspect each with typeof.",
+  "hint": "Use quotes for text but not for numeric arithmetic.",
+  "quiz": {
+    "question": "Which declaration allows score to be reassigned?",
+    "options": [
+      "const score = 0",
+      "let score = 0",
+      "Neither declaration"
+    ],
+    "correct": 1,
+    "explanation": "let permits reassignment. const prevents assigning a different value to the binding."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+  }
+}

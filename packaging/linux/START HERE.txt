@@ -1,0 +1,12 @@
+JEFF FOR LINUX
+==============
+
+1. Extract this archive.
+2. Open Terminal in the extracted folder.
+3. Run: bash install.sh
+
+The installer downloads Node.js, Python, Ollama, JEFF's local AI model,
+and local speech recognition. An internet connection is required for setup.
+
+After setup, open JEFF from your applications menu or run:
+~/.local/bin/jeff

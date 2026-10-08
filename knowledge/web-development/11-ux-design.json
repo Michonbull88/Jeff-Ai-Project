@@ -1,0 +1,39 @@
+{
+  "id": "ux-design",
+  "order": 11,
+  "title": "UX design: tasks and feedback",
+  "group": "Design & accessibility",
+  "keywords": [
+    "ux",
+    "user experience",
+    "research",
+    "wireframe",
+    "journey",
+    "usability",
+    "feedback"
+  ],
+  "goal": "Design around a task people need to finish.",
+  "explanation": [
+    "Write a concrete user goal before drawing a screen. Identify the first step, the information needed, the success state and possible failure states.",
+    "Sketch a low-detail wireframe. Use familiar labels and keep important choices near the information needed to make them. Ask someone to try the task without coaching them.",
+    "Observe hesitation and errors. A loading state, confirmation and useful recovery action are part of the experience, not finishing touches. Do not hide the cost or consequence of an action."
+  ],
+  "code": "Task: book a consultation\n1. Choose a service\n2. Choose an available time\n3. Enter contact details\n4. Review and confirm\n5. Receive a clear confirmation",
+  "language": "text",
+  "exercise": "Wireframe a booking flow. Include an unavailable time, a validation error and a successful booking.",
+  "hint": "Describe what the user sees after every action.",
+  "quiz": {
+    "question": "What is most useful in a usability session?",
+    "options": [
+      "Explaining where every button is before the task",
+      "Watching someone attempt a realistic task",
+      "Asking only whether the colours are nice"
+    ],
+    "correct": 1,
+    "explanation": "Observed task performance reveals obstacles that a general preference question can miss."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://www.w3.org/WAI/test-evaluate/involving-users/"
+  }
+}

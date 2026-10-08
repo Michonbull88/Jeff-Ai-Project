@@ -1,0 +1,39 @@
+{
+  "id": "async-javascript",
+  "order": 20,
+  "title": "Async JavaScript",
+  "group": "JavaScript",
+  "keywords": [
+    "async",
+    "await",
+    "promise",
+    "asynchronous",
+    "try",
+    "catch",
+    "loading"
+  ],
+  "goal": "Handle a task that completes later without blocking the interface.",
+  "explanation": [
+    "A promise represents a future result. An async function returns a promise; await pauses that function until the awaited promise settles.",
+    "Use try/catch to handle rejected promises and finally to restore UI state. A rejected network request should not leave a button permanently disabled.",
+    "Independent requests can often run together with Promise.all. If any promise rejects, Promise.all rejects; use allSettled when you need the outcome of every task."
+  ],
+  "code": "async function showResult(task) {\n  try {\n    const value = await task();\n    return value;\n  } catch (error) {\n    console.error(\"Task failed\", error);\n    return null;\n  }\n}",
+  "language": "javascript",
+  "exercise": "Write an async function that handles both a resolved and a rejected promise.",
+  "hint": "Promise.resolve and Promise.reject let you practise without a network.",
+  "quiz": {
+    "question": "What does an async function return?",
+    "options": [
+      "Always a string",
+      "A promise",
+      "Nothing until a page reload"
+    ],
+    "correct": 1,
+    "explanation": "Its return value is wrapped in a promise, including when it returns a plain value."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises"
+  }
+}

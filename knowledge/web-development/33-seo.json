@@ -1,0 +1,40 @@
+{
+  "id": "seo",
+  "order": 33,
+  "title": "SEO fundamentals",
+  "group": "Shipping & projects",
+  "keywords": [
+    "seo",
+    "title",
+    "meta",
+    "search",
+    "description",
+    "crawl",
+    "links",
+    "canonical"
+  ],
+  "goal": "Help people and search engines understand a page.",
+  "explanation": [
+    "Write useful content for a clear audience. Use a descriptive page title, meaningful headings and crawlable links. Search visibility is not guaranteed by adding keywords.",
+    "A meta description can help describe a page in search results, but the search engine may choose different text. Avoid duplicate pages with conflicting URL signals.",
+    "Ensure important pages can be reached and return appropriate HTTP statuses. robots.txt is not an access-control mechanism; private content needs authentication and authorisation."
+  ],
+  "code": "<title>Website design in Johannesburg | Studio Example</title>\n<meta name=\"description\" content=\"See our website design services, process and recent projects.\">",
+  "language": "html",
+  "exercise": "Write a specific title and description for your portfolio services page.",
+  "hint": "Describe the actual page. Do not promise a ranking position.",
+  "quiz": {
+    "question": "Can robots.txt protect confidential records?",
+    "options": [
+      "Yes, it authenticates visitors",
+      "No, it is not access control",
+      "Only if the filename is secret"
+    ],
+    "correct": 1,
+    "explanation": "Confidential content needs server-enforced access restrictions."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+  }
+}

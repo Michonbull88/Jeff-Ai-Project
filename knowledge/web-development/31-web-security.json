@@ -1,0 +1,40 @@
+{
+  "id": "web-security",
+  "order": 31,
+  "title": "Web security",
+  "group": "Tools & backend",
+  "keywords": [
+    "security",
+    "xss",
+    "csrf",
+    "sql injection",
+    "passwords",
+    "validation",
+    "escaping",
+    "parameterized"
+  ],
+  "goal": "Recognise common trust boundaries and basic defences.",
+  "explanation": [
+    "XSS happens when untrusted content is treated as executable page content. Use safe text insertion and context-appropriate output handling; do not inject arbitrary HTML.",
+    "SQL injection mixes user data with query syntax. Use parameterised queries, least-privilege database access and server-side authorisation. Input validation alone is not a substitute for binding.",
+    "CSRF can abuse automatically attached credentials to trigger unwanted actions. Apply appropriate anti-CSRF tokens and origin checks for state-changing requests, alongside cookie settings. Never put credentials in source control or client bundles."
+  ],
+  "code": "// Display a submitted comment as text, not HTML.\nconst output = document.querySelector(\"#comment\");\nif (output) output.textContent = untrustedComment;",
+  "language": "javascript",
+  "exercise": "Review a small form: identify one XSS risk, one server validation requirement and the authorisation check.",
+  "hint": "Treat input as data and enforce permissions on the server.",
+  "quiz": {
+    "question": "Which defence directly addresses SQL injection in values?",
+    "options": [
+      "A hidden submit button",
+      "Parameterised queries",
+      "A longer CSS file"
+    ],
+    "correct": 1,
+    "explanation": "Parameters separate values from executable SQL. Additional access controls still matter."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+  }
+}

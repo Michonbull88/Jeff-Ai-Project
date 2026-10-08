@@ -1,0 +1,40 @@
+{
+  "id": "debugging",
+  "order": 36,
+  "title": "Debugging",
+  "group": "Shipping & projects",
+  "keywords": [
+    "debug",
+    "debugging",
+    "error",
+    "console",
+    "network",
+    "breakpoint",
+    "reproduce",
+    "stack trace"
+  ],
+  "goal": "Turn an unclear failure into a small reproducible case.",
+  "explanation": [
+    "Describe expected behaviour and the exact steps that produce the failure. Record the relevant error message without exposing credentials or personal data.",
+    "Use the console for exceptions, the Network tab for request/response failures, and breakpoints to inspect values at the point where behaviour changes.",
+    "Reduce the example and change one assumption at a time. After a fix, verify the original failure and the surrounding behaviour. Avoid masking an exception without understanding its cause."
+  ],
+  "code": "Expected: clicking Save shows a confirmation\nActual: button stays disabled\nReproduction: submit while the network is unavailable\nInvestigate: catch/finally branches and the request error",
+  "language": "text",
+  "exercise": "Write a reproducible bug report for a failed form submission, then list two places to inspect.",
+  "hint": "Include steps, expected result, actual result and a small relevant example.",
+  "quiz": {
+    "question": "What is a useful first step when debugging?",
+    "options": [
+      "Change many unrelated lines",
+      "Reproduce and describe the failure",
+      "Hide all errors"
+    ],
+    "correct": 1,
+    "explanation": "A reproducible failure lets you check whether a proposed change actually fixes the problem."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.chrome.com/docs/devtools/javascript"
+  }
+}

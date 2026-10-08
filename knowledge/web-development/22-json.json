@@ -1,0 +1,39 @@
+{
+  "id": "json",
+  "order": 22,
+  "title": "JSON",
+  "group": "JavaScript",
+  "keywords": [
+    "json",
+    "parse",
+    "stringify",
+    "serialization",
+    "data",
+    "object",
+    "api"
+  ],
+  "goal": "Exchange structured data using a text format.",
+  "explanation": [
+    "JSON is text with a restricted syntax. Object keys and string values use double quotes. Comments, functions, undefined and trailing commas are not part of JSON.",
+    "JSON.parse turns JSON text into a JavaScript value. JSON.stringify serialises supported values to JSON text. Dates need an agreed representation, often an ISO string.",
+    "Parsing proves only that the syntax is valid. Validate the resulting structure and values before using them, especially when the data came from a request or file."
+  ],
+  "code": "const text = '{\"name\":\"Notebook\",\"price\":35}';\nconst product = JSON.parse(text);\nconsole.log(product.name);\nconst saved = JSON.stringify(product);",
+  "language": "javascript",
+  "exercise": "Encode two products as JSON, parse them and validate that each price is a finite number.",
+  "hint": "A valid JSON document can still have the wrong fields for your app.",
+  "quiz": {
+    "question": "What does JSON.parse do?",
+    "options": [
+      "Converts JSON text into a JavaScript value",
+      "Executes JavaScript source",
+      "Encrypts an object"
+    ],
+    "correct": 0,
+    "explanation": "Parsing converts the data representation. It does not execute code or validate your business rules."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"
+  }
+}

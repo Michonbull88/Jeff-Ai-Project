@@ -1,0 +1,41 @@
+{
+  "id": "semantic-html",
+  "order": 3,
+  "title": "Advanced HTML: semantics",
+  "group": "HTML & foundations",
+  "keywords": [
+    "semantic",
+    "html",
+    "nav",
+    "main",
+    "article",
+    "section",
+    "table",
+    "forms",
+    "label"
+  ],
+  "goal": "Choose elements that communicate meaning.",
+  "explanation": [
+    "Use nav for major navigation, main for the primary content, and article for a self-contained item. A section normally has a heading. A div is useful when no semantic element fits.",
+    "Use lists for groups of items, tables for tabular data, and forms for collecting input. Table headers identify rows or columns; a caption names the table. Do not use tables to position page sections.",
+    "An input needs a visible label connected through for and id, or by nesting. A placeholder disappears and is not a replacement for the label."
+  ],
+  "code": "<nav aria-label=\"Main\"><a href=\"/\">Home</a></nav>\n<main>\n  <article><h1>Our studio</h1><p>Design for people.</p></article>\n  <form><label for=\"email\">Email</label><input id=\"email\" name=\"email\" type=\"email\"></form>\n</main>",
+  "language": "html",
+  "exercise": "Replace a div-only navigation and contact form with semantic HTML.",
+  "hint": "Start with nav, a, form and label. Keep input id and label for identical.",
+  "quiz": {
+    "question": "What gives an input a persistent accessible name?",
+    "options": [
+      "Its border colour",
+      "A connected label",
+      "Only its placeholder"
+    ],
+    "correct": 1,
+    "explanation": "A connected label identifies the control even when it contains text."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+  }
+}

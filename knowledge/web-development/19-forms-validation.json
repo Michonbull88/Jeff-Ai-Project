@@ -1,0 +1,40 @@
+{
+  "id": "forms-validation",
+  "order": 19,
+  "title": "Forms and validation",
+  "group": "JavaScript",
+  "keywords": [
+    "form",
+    "validation",
+    "input",
+    "required",
+    "email",
+    "submit",
+    "errors",
+    "label"
+  ],
+  "goal": "Guide users through valid input and validate again on the server.",
+  "explanation": [
+    "Native input types, required, min and max provide useful client-side constraints. Associate instructions and error messages with the relevant control.",
+    "Client validation improves usability but cannot enforce security. Requests can be sent without your page, so the server must independently validate type, length and allowed values.",
+    "Keep a failed submission available for correction. Explain what went wrong without exposing secrets or database internals. Never rely on a disabled button as an access-control check."
+  ],
+  "code": "<form>\n  <label for=\"contact\">Email</label>\n  <input id=\"contact\" name=\"email\" type=\"email\" required>\n  <button type=\"submit\">Request a reply</button>\n</form>",
+  "language": "html",
+  "exercise": "Build a labelled email form. Describe the server validation it also needs.",
+  "hint": "Client controls help the person; the server must distrust all incoming requests.",
+  "quiz": {
+    "question": "Where is security-critical input validation required?",
+    "options": [
+      "Only in HTML",
+      "On the server, even if the browser also validates",
+      "Only in CSS"
+    ],
+    "correct": 1,
+    "explanation": "The server receives requests from any client, including clients that bypass your form."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation"
+  }
+}

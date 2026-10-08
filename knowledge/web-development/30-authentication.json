@@ -1,0 +1,40 @@
+{
+  "id": "authentication",
+  "order": 30,
+  "title": "Authentication and sessions",
+  "group": "Tools & backend",
+  "keywords": [
+    "authentication",
+    "authorization",
+    "password",
+    "hash",
+    "session",
+    "cookie",
+    "login",
+    "csrf"
+  ],
+  "goal": "Separate proving identity from granting access.",
+  "explanation": [
+    "Authentication checks identity. Authorisation checks what that identity may do. Being logged in does not mean a person may access another person’s records.",
+    "Use a maintained authentication solution. Store passwords with a suitable password-hashing algorithm and salt, not plaintext or a fast general-purpose hash. Protect login flows against abuse.",
+    "For cookie-based sessions, use HTTPS and appropriate Secure, HttpOnly and SameSite settings. Enforce expiration and server-side permissions. Cookie flags do not replace CSRF protection or prevent all XSS."
+  ],
+  "code": "Request arrives\n→ Verify session\n→ Identify the user\n→ Check permission for this specific resource\n→ Perform the operation\n→ Return only permitted data",
+  "language": "text",
+  "exercise": "Explain the checks required before a signed-in user edits a note identified by its URL.",
+  "hint": "Check ownership or an explicit role after verifying the session.",
+  "quiz": {
+    "question": "Which check stops one signed-in user reading another user’s private note?",
+    "options": [
+      "Authentication alone",
+      "Resource-level authorisation",
+      "Hiding the edit button"
+    ],
+    "correct": 1,
+    "explanation": "The server must enforce access for the specific resource on each request."
+  },
+  "reference": {
+    "title": "Official reference",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html"
+  }
+}
